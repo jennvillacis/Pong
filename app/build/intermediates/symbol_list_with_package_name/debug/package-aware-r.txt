@@ -648,9 +648,11 @@ id ALT
 id CTRL
 id FUNCTION
 id META
+id PlayerNameValue
 id PongLogo
 id SHIFT
 id SYM
+id Submit
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -738,6 +740,7 @@ id parentPanel
 id percent
 id player1button
 id player2button
+id playerName
 id progress_circular
 id progress_horizontal
 id radio
@@ -828,6 +831,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_player_name
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -840,6 +844,9 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+string PlayerName
+string PlayerNameValue
+string Submit
 string _1_player
 string _2_player
 string abc_action_bar_home_description
@@ -882,9 +889,11 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string enterName
 string pong_break
 string search_menu_title
 string status_bar_notification_info_overflow
+string writeName
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

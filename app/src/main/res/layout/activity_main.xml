@@ -32,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="106dp"
         android:background="#0E3551"
+        android:onClick="Player1"
         android:text="@string/_1_player"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#94FF1B"
