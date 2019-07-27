@@ -2,34 +2,39 @@ package com.example.pong;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.view.Display;
 
 public class LevelOne extends AppCompatActivity {
-    private Button button;
+
+    GameView gameView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level_one);
 
-        button= findViewById(R.id.submitPlayerNameButton);
-        button.setOnClickListener(new View.OnClickListener() {
+        Display display = getWindowManager().getDefaultDisplay();
 
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                openLevelOne();
+        Point size = new Point();
+        display.getSize(size);
 
-            }
-        });
+        gameView = new GameView (this, size.x, size.y);
+        setContentView(gameView);
 
     }
-    public void openLevelOne() {
-        Intent intent = new Intent(getApplicationContext(),LevelOne.class);
-        startActivity(intent);
 
+    @Override
+    protected void onResume(){
+        super.onResume();
+
+        gameView.resume();
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+
+        gameView.pause();
     }
 }

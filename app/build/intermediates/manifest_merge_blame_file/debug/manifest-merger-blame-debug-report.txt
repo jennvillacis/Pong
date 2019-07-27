@@ -25,38 +25,39 @@
 17-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
 18-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:10:9-35
-19        android:theme="@style/AppTheme" >
-19-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:11:9-40
-20        <activity android:name="com.example.pong.LevelOne" />
-20-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:12:9-55
-20-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:12:19-43
-21        <activity
-21-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:13:9-19:20
-22            android:name="com.example.pong.PlayerName"
-22-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:14:13-39
-23            android:parentActivityName="com.example.pong.MainActivity" >
-23-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:15:13-55
-24            <meta-data
-24-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:16:13-18:49
-25                android:name="android.support.PARENT_ACTIVITY"
-25-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:17:17-63
-26                android:value=".MainActivity" />
-26-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:18:17-46
-27        </activity>
-28        <activity android:name="com.example.pong.MainActivity" >
-28-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:20:9-26:20
-28-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:20:19-47
-29            <intent-filter>
-29-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:21:13-25:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:22:17-69
-30-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:22:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:24:17-77
-32-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:24:27-74
-33            </intent-filter>
-34        </activity>
-35    </application>
-36
-37</manifest>
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:11:9-40
+21        <activity android:name="com.example.pong.LevelOne" />
+21-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:12:9-55
+21-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:12:19-43
+22        <activity
+22-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:13:9-19:20
+23            android:name="com.example.pong.PlayerName"
+23-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:14:13-39
+24            android:parentActivityName="com.example.pong.MainActivity" >
+24-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:15:13-55
+25            <meta-data
+25-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:16:13-18:49
+26                android:name="android.support.PARENT_ACTIVITY"
+26-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:17:17-63
+27                android:value=".MainActivity" />
+27-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:18:17-46
+28        </activity>
+29        <activity android:name="com.example.pong.MainActivity" >
+29-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:20:9-26:20
+29-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:20:19-47
+30            <intent-filter>
+30-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:21:13-25:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:22:17-69
+31-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:22:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:24:17-77
+33-->/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/AndroidManifest.xml:24:27-74
+34            </intent-filter>
+35        </activity>
+36    </application>
+37
+38</manifest>

@@ -18,11 +18,6 @@ public class MainActivity extends AppCompatActivity {
         //startActivity(new Intent(this,PlayerName.class));
     }
 
-    public void Player2(View view) {
-        setContentView(R.layout.activity_player_name);
-        //  Intent intent = new Intent(this, PlayerName.class);
-        startActivity(new Intent(this,PlayerName.class));
-    }
 
 
     /* *** This is a pop up window at the end of the level*****
