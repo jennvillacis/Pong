@@ -652,7 +652,6 @@ id PlayerNameValue
 id PongLogo
 id SHIFT
 id SYM
-id Submit
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -776,6 +775,7 @@ id src_over
 id standard
 id start
 id submenuarrow
+id submitPlayerNameButton
 id submit_area
 id tabMode
 id tag_transition_group
@@ -830,6 +830,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_level_one
 layout activity_main
 layout activity_player_name
 layout notification_action
