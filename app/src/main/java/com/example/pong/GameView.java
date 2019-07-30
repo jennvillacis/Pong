@@ -31,13 +31,7 @@ public class GameView extends SurfaceView implements Runnable {
     Bar playerBar;
 
     Ball playerBall;
-
-
-    //for sound FX
-    // int beep1ID = -1;
-    // int beep2ID = -1;
-    // int beep3ID = -1;
-    // int loseLifeID = -1;
+    
 
     //score
     int playerScore = 0;
@@ -135,7 +129,7 @@ public class GameView extends SurfaceView implements Runnable {
             playerBall.clearObstacleX(sizeScreenX - 22);
         }
     }
-
+//this method draws the objects
     public void draw() {
         if (pongHolder.getSurface().isValid()) {
             gameCanvas = pongHolder.lockCanvas();

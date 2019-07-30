@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jvillacis/AndroidStudioProjects/Pong/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
+            "outputFile": "/Users/abdiwaliolad/Documents/GitHub/Pong/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "/Users/jvillacis/.gradle/caches/transforms-2/files-2.1/23e7592079a423368328b172be8a97d1/appcompat-1.0.2/res/values-v22/values-v22.xml",
+                    "source": "/Users/abdiwaliolad/.gradle/caches/transforms-2/files-2.1/23e7592079a423368328b172be8a97d1/appcompat-1.0.2/res/values-v22/values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",
