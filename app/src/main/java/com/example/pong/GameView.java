@@ -17,7 +17,7 @@ public class GameView extends SurfaceView implements Runnable {
 
     volatile boolean gameRunning;
 
-    //game is paused at the start
+    //game is paused at the start of the game
     boolean gamePaused = true;
 
     Canvas gameCanvas;
@@ -31,7 +31,7 @@ public class GameView extends SurfaceView implements Runnable {
     Bar playerBar;
 
     Ball playerBall;
-    
+
 
     //score
     int playerScore = 0;
