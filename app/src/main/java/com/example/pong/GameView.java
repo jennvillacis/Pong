@@ -149,8 +149,10 @@ public class GameView extends SurfaceView implements Runnable {
             gamePaint.setColor(Color.argb(250,255, 255, 255)); //white text letters
 
             //remove.....later for scoring temporary
-            gamePaint.setTextSize(100);
-            gameCanvas.drawText("Score: " + playerScore + " Lives: " + playerLives, 10, 15, gamePaint);
+            gamePaint.setTextSize(80);
+
+
+            gameCanvas.drawText("Score: " + playerScore + " Lives: " + + playerLives, 10, 80, gamePaint);
 
             //draw everything to the screen
             pongHolder.unlockCanvasAndPost(gameCanvas);
@@ -178,10 +180,10 @@ public class GameView extends SurfaceView implements Runnable {
     public boolean onTouchEvent(MotionEvent motionEvent) {
         switch (motionEvent.getAction() & MotionEvent.ACTION_MASK) {
             case MotionEvent.ACTION_DOWN:
-                gamePaused = false;
+                gamePaused = true;
 
 
-                if (motionEvent.getX() > sizeScreenX / 2) {
+                if (motionEvent.getX() > sizeScreenX/2) {
                     playerBar.setMovementState(playerBar.RIGHT);
                 }   else {
                     playerBar.setMovementState(playerBar.LEFT);
