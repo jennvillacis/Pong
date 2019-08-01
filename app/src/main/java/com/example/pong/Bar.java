@@ -11,6 +11,7 @@ public class Bar {
     private float yCoord;
     private float barSpeed;
 
+
     //ways the bar moves
     public final int STOPPED = 0;
     public final int LEFT = 1;
@@ -26,17 +27,14 @@ public class Bar {
         screenY = y;
 
         //value divided by screen width/height
-        barLength = screenX /8;
-        barHeight = screenY/10;
+        barLength = screenX /3;
+        barHeight = screenY/35;
 
         //starts the bar at the center of screen
-        xCoord = screenX / 50 ;
-        yCoord = screenY  /2 ;
-
-
+        xCoord = screenX / 3 ;
+        yCoord =(screenY/2)+(screenY/3);
         //creates the bar with x & y coord and barLength and height
         mRect = new RectF(xCoord, yCoord,xCoord + barLength, yCoord + barHeight);
-
 
         //bar covers entire screen (x)
         barSpeed = screenX;
@@ -48,6 +46,7 @@ public class Bar {
     public RectF getRect(){
         return mRect;
     }
+
 
     //sets the state of the bar
     public void setMovementState (int state) {
