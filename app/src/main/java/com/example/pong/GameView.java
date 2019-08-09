@@ -107,7 +107,8 @@ public class GameView extends SurfaceView implements Runnable {
             //loses life if...
             if (playerLives == 0 ) {
                 gamePaused = true;
-                setupAndRestart();
+                playerLives = 3;
+
             }
         }
 
@@ -152,7 +153,7 @@ public class GameView extends SurfaceView implements Runnable {
             gamePaint.setTextSize(80);
 
 
-            gameCanvas.drawText("Score: " + playerScore + " Lives: " + + playerLives, 10, 80, gamePaint);
+            gameCanvas.drawText("Score: " + playerScore + " Timer: Currently Not Working", 10, 80, gamePaint);
 
             //draw everything to the screen
             pongHolder.unlockCanvasAndPost(gameCanvas);

@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jvillacis/AndroidStudioProjects/Pong/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/jvillacis/Documents/GitHub/Pong/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
-                {
-                    "source": "/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "5,7,8,3,4,1,6,2,9",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "202,315,370,108,155,16,254,58,412",
-                        "endColumns": "51,54,41,46,46,41,60,49,58",
-                        "endOffsets": "249,365,407,150,197,53,310,103,466"
-                    },
-                    "to": {
-                        "startLines": "338,339,340,341,342,382,383,384,387",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "19775,19827,19882,19924,19971,22776,22818,22879,23053",
-                        "endColumns": "51,54,41,46,46,41,60,49,58",
-                        "endOffsets": "19822,19877,19919,19966,20013,22813,22874,22924,23107"
-                    }
-                },
                 {
                     "source": "/Users/jvillacis/.gradle/caches/transforms-2/files-2.1/8cfdb015f22e9a9787e01ac2a7d1a540/coordinatorlayout-1.0.0/res/values/values.xml",
                     "from": {
@@ -59,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/res/values/styles.xml",
+                    "source": "/Users/jvillacis/Documents/GitHub/Pong/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -75,23 +58,6 @@
                         "endLines": "399",
                         "endColumns": "12",
                         "endOffsets": "23934"
-                    }
-                },
-                {
-                    "source": "/Users/jvillacis/AndroidStudioProjects/Pong/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "153,55,102",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "194,97,148"
-                    },
-                    "to": {
-                        "startLines": "153,154,155",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "7704,7750,7797",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "7745,7792,7843"
                     }
                 },
                 {
@@ -114,6 +80,23 @@
                     }
                 },
                 {
+                    "source": "/Users/jvillacis/Documents/GitHub/Pong/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "153,55,102",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "194,97,148"
+                    },
+                    "to": {
+                        "startLines": "153,154,155",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "7704,7750,7797",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "7745,7792,7843"
+                    }
+                },
+                {
                     "source": "/Users/jvillacis/.gradle/caches/transforms-2/files-2.1/848d7ae98cf87e77632ecc4f8c64694e/core-1.0.1/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,171,172,176,177,178,6,13,56,88,125",
@@ -130,6 +113,23 @@
                         "endLines": "178,179,275,276,277,278,279,280,281,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,314,315,321,322,326,327,328,329,330,331,337,386,1709,1713,1714,1718,1719,1856,1857,2528,2717,2749,2786,2793",
                         "endColumns": "68,62,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,49,60,56,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24",
                         "endOffsets": "9265,9328,15921,15989,16061,16131,16192,16266,16339,17184,17245,17307,17371,17433,17494,17562,17662,17722,17788,17861,17930,17987,18039,18101,18626,18702,18976,19011,19203,19264,19321,19355,19390,19425,19770,23048,111175,111376,111486,111687,111816,122714,122781,158891,176013,178078,179838,180215"
+                    }
+                },
+                {
+                    "source": "/Users/jvillacis/Documents/GitHub/Pong/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "5,7,8,3,4,1,6,2,9",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "202,315,370,108,155,16,254,58,412",
+                        "endColumns": "51,54,41,46,46,41,60,49,58",
+                        "endOffsets": "249,365,407,150,197,53,310,103,466"
+                    },
+                    "to": {
+                        "startLines": "338,339,340,341,342,382,383,384,387",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "19775,19827,19882,19924,19971,22776,22818,22879,23053",
+                        "endColumns": "51,54,41,46,46,41,60,49,58",
+                        "endOffsets": "19822,19877,19919,19966,20013,22813,22874,22924,23107"
                     }
                 }
             ]
