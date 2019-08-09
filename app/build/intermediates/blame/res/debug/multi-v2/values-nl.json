@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jvillacis/AndroidStudioProjects/Pong/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
+            "outputFile": "/Users/jvillacis/Documents/GitHub/Pong/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
             "map": [
                 {
                     "source": "/Users/jvillacis/.gradle/caches/transforms-2/files-2.1/23e7592079a423368328b172be8a97d1/appcompat-1.0.2/res/values-nl/values-nl.xml",
