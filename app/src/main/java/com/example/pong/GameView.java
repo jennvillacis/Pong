@@ -10,6 +10,9 @@ import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+
+
+
 public class GameView extends SurfaceView implements Runnable {
 
     Thread gameThread = null;
@@ -19,9 +22,10 @@ public class GameView extends SurfaceView implements Runnable {
 
     //game is paused at the start of the game
     boolean gamePaused = true;
-
     Canvas gameCanvas;
     Paint gamePaint;
+
+
 
     long gameFPS;
 
@@ -32,16 +36,16 @@ public class GameView extends SurfaceView implements Runnable {
 
     Ball playerBall;
 
-
     //score
     int playerScore = 0;
 
     int playerLives = 3;
+    String playerName;
 
-
-    public GameView (Context context, int x, int y) {
+    public GameView (Context context, int x, int y, String playerName) {
 
         super(context);
+        this.playerName = playerName;
 
         sizeScreenX = x;
         sizeScreenY = y;
@@ -59,34 +63,36 @@ public class GameView extends SurfaceView implements Runnable {
 
     public void setupAndRestart() {
         playerBall.reset(sizeScreenX, sizeScreenY);
-
-        if (playerLives == 0 ) {
-            playerScore = 0;
+        if (playerLives==0 ){
+            // playerScore = 0;
             playerLives = 3;
-        }
 
+        }
     }
 
     @Override
-    public void run(){
+    public void run() {
         while (gameRunning) {
-            long startFrameTime = System.currentTimeMillis();
-            if(gamePaused){
-                update();
+            long startFrameTime = System.currentTimeMillis( );
+            if (gamePaused) {
+                update( );
             }
 
-            draw();
+            draw( );
 
-            long timeThisFrame = System.currentTimeMillis() - startFrameTime;
-            if(timeThisFrame >= 1) {
-                gameFPS = 1000 /timeThisFrame;
+            long timeThisFrame = System.currentTimeMillis( ) - startFrameTime;
+            if (timeThisFrame >= 1) {
+                gameFPS = 1000 / timeThisFrame;
             }
+
         }
     }
+
 
     public void update() {
         playerBar.update(gameFPS);
         playerBall.update(gameFPS);
+
 
         if (RectF.intersects(playerBar.getRect(), playerBall.getRect())) {
             playerBall.setRandomVelocity();
@@ -98,18 +104,20 @@ public class GameView extends SurfaceView implements Runnable {
         }
 
         if (playerBall.getRect().bottom > sizeScreenY) {
-            playerBall.reverseYVelocity();
+            playerBall.reverseYVelocity( );
             playerBall.clearObstacleY(sizeScreenY - 2);
 
             //lose a life
             playerLives--;
 
             //loses life if...
-            if (playerLives == 0 ) {
-                gamePaused = true;
-                playerLives = 3;
+            if (playerLives == 0) {
+                setupAndRestart();
+                gamePaused=true;
 
             }
+
+
         }
 
 
@@ -130,7 +138,7 @@ public class GameView extends SurfaceView implements Runnable {
             playerBall.clearObstacleX(sizeScreenX - 22);
         }
     }
-//this method draws the objects
+    //this method draws the objects
     public void draw() {
         if (pongHolder.getSurface().isValid()) {
             gameCanvas = pongHolder.lockCanvas();
@@ -153,7 +161,8 @@ public class GameView extends SurfaceView implements Runnable {
             gamePaint.setTextSize(80);
 
 
-            gameCanvas.drawText("Score: " + playerScore + " Timer: Currently Not Working", 10, 80, gamePaint);
+
+            gameCanvas.drawText("Player: "+ playerName + " Score: " + playerScore + " Lives: " + playerLives, 10, 80, gamePaint);
 
             //draw everything to the screen
             pongHolder.unlockCanvasAndPost(gameCanvas);
@@ -176,6 +185,7 @@ public class GameView extends SurfaceView implements Runnable {
         gameThread = new Thread(this);
         gameThread.start();
     }
+
 
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
@@ -204,5 +214,3 @@ public class GameView extends SurfaceView implements Runnable {
 
 
 }
-
-
