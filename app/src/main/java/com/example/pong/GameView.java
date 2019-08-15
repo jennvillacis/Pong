@@ -162,7 +162,7 @@ public class GameView extends SurfaceView implements Runnable {
 
 
 
-            gameCanvas.drawText("Player: "+ playerName + " Score: " + playerScore + " Lives: " + playerLives, 10, 80, gamePaint);
+            gameCanvas.drawText("Player: "+ playerName + " Score: " + playerScore, 10, 80, gamePaint);
 
             //draw everything to the screen
             pongHolder.unlockCanvasAndPost(gameCanvas);
